@@ -1,0 +1,333 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    display: flex;
+    width: auto;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    box-sizing: border-box;  
+}
+
+a {
+    color: rgb(0, 162, 255);
+}
+a:hover {
+    color: black;
+}
+
+/* header */
+
+#logo, #nombrelogo {
+    display: inline-block;
+    padding: 0px;
+    font-size: 100px;
+    
+}
+
+#logo {
+    height: 120px;
+    margin: 0px;
+    margin-block: 0px;
+    margin-inline: 0px;
+}
+
+#nombrelogo {
+    margin: 0px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+
+header nav, header div {
+    display: inline-block;
+    padding: 0px;
+    height: 150px;
+}
+
+header {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    width: 1440px;
+    text-align: center;
+    
+    
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin-block: 0px;
+    margin-inline: 0px;
+    height: 100%;
+}
+
+header nav {
+    width: 30%;
+    font-size: 25px;
+    font-weight:600;
+    
+    
+}
+
+/* slide */
+
+#slide {
+    height: 600px;
+    background-image: url(img/restoran.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+section div {
+    width: 1440px;
+}
+
+#divslide h2, #divslide p {
+    width: 35%;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 15px;
+}
+
+#divslide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    
+}
+
+#divslide h2 {
+    font-size: 50px;
+}
+
+/* seccion menu */
+
+
+.secciones {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+#menu :nth-child(3) {
+    grid-row: span 2;
+}
+
+
+#menu :nth-child(5) {
+    grid-column: span 2;
+}
+
+#menu figure {
+    padding: 0px;
+    margin: 0px;
+    height: 375px;
+}
+
+section h3 {
+    font-size: 40px;
+}
+
+.secciones h5 {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+figure img {
+    width: 100%;
+}
+
+/* seccion novedades */
+
+#novedades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+}
+
+#novedades figure {
+    width: 50%;
+    margin: 0px;
+    margin-inline: 0px;
+    margin-block: 0px;
+    float: left;
+    border-bottom: 1px solid black;
+}
+
+#novedades article div :nth-child(4) {
+    background-color: rgba(255, 255, 255, 0.409);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#novedades article div {
+    width: 45%;
+    float: right;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+#novedades h4 {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#novedades button {
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(0, 79, 183);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    margin: 0px;
+}
+
+#seccnovedades {
+    background-color: rgba(0, 110, 255, 0.585);
+    padding-bottom: 50px;
+}
+
+#novedades ul, #novedades table {
+    font-size: 20px;
+    border: none;
+    
+}
+
+#novedades table {
+    width: 100%;
+}
+
+#novedades h5 {
+    text-align: left;
+    background-color: transparent;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
+}
+#novedades thead {
+    text-align: left;
+}
+#novedades tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+   
+}
+
+#novedades tr:nth-child(even) {
+    background-color: rgb(174, 209, 255);
+    
+}
+#novedades #tablacabeza {
+    background-color: rgb(174, 209, 255);
+    
+}
+
+#novedades div {
+    width: auto;
+    margin-top: 30px;
+}
+
+#novedades table th, #novedades table td {
+    padding-left: 10px;
+}
+
+/* seccion reservas */
+
+#reservas {
+    width: 1440px;
+    margin-bottom: 50px;
+}
+
+section form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 60%;
+    grid-gap: 20px 0px;
+    margin: 0px;
+    float: left;
+
+}
+
+form div {
+    width: auto;
+    text-align: left;
+}
+
+form :nth-child(1) {
+    grid-column: span 2;
+}
+
+#nombre {
+    width: 90%;
+}
+
+form div label, form div input, form div select, form div fieldset, div div input {
+    width: 80%;
+    border: none;
+    margin: 0px;
+    
+}
+
+form div fieldset {
+    padding: 0px;
+}
+
+form div input, form div select {
+    background-color: rgba(0, 110, 255, 0.585);
+    padding: 5px;
+}
+
+form div fieldset input {
+    width: auto;
+    background-color: rgba(0, 110, 255, 0.585);
+}
+
+#mapa {
+    width: 35%;
+    float: right;
+    height: 250px;
+}
+
+/* footer */
+
+footer {
+    background-color: rgba(0, 110, 255, 0.897);
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center;
+}
+footer img {
+    margin: 10px;
+}
